@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For baby</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e0f7fa;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0 20px;
+        }
+        .apology {
+            margin-top: 10vh;
+            font-size: 1.2em;
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            max-width: 100%;
+        }
+        .apology h1 {
+            font-family: 'Poppins', sans-serif;
+            color: #ff4081;
+            font-weight: 600;
+        }
+        .apology p {
+            margin: 10px 0;
+        }
+        .flower {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .flower .petal {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: #ff80ab;
+            border-radius: 50%;
+        }
+        .flower .petal:nth-child(1) { top: 0; left: 30px; }
+        .flower .petal:nth-child(2) { top: 30px; left: 0; }
+        .flower .petal:nth-child(3) { top: 30px; left: 60px; }
+        .flower .petal:nth-child(4) { top: 60px; left: 30px; }
+        .flower .center {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 40px;
+            height: 40px;
+            background-color: #ffd740;
+            border-radius: 50%;
+        }
+        .arrow {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #ff4081;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .arrow::before {
+            content: '⬇';
+            font-size: 2em;
+        }
+        @media (min-width: 600px) {
+            .apology {
+                font-size: 1.5em;
+                padding: 30px;
+                max-width: 600px;
+            }
+            .flower {
+                width: 150px;
+                height: 150px;
+            }
+            .flower .petal {
+                width: 60px;
+                height: 60px;
+            }
+            .flower .petal:nth-child(1) { top: 0; left: 45px; }
+            .flower .petal:nth-child(2) { top: 45px; left: 0; }
+            .flower .petal:nth-child(3) { top: 45px; left: 90px; }
+            .flower .petal:nth-child(4) { top: 90px; left: 45px; }
+            .flower .center {
+                top: 45px;
+                left: 45px;
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="apology">
+        <h1>For my baby</h1>
+        <p>To my beautiful wife that today is 20 years old, so she never doubts that i love her, to never think i hate her, and to always think i look at her like the princess she is</p>
+        <div class="arrow">Touch the flower baby</div>
+        <div class="flower" onclick="showMessage()">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+        </div>
+    </div>
+    <script>
+        function showMessage() {
+            alert("I mean, you said is a different song now, but this was our first");
+            window.location.href = "https://www.youtube.com/watch?v=tIpzfs5tBJU";
+        }
+    </script>
+</body>
+</html>
